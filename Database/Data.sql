@@ -16,5 +16,13 @@ INSERT INTO categories (category_name, updated) VALUES ('Free Meals','2023-04-26
 INSERT INTO categories (category_name, updated) VALUES ('Clothing and Household','2023-04-26');
 INSERT INTO categories (category_name, updated) VALUES ('Additional Resources','2023-04-26');
 
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Community for New Directions','Substance use and metal health','1000 Atcheson St','6142524941','',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Alcoholics Anonymous','','651 W. Broad','6142538501','24/7',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('AL-ANON','','','6145471550','',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Cocaine Anonymous','','','6142511122','',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Narcotics Anonymous','Refer to support group','','6142521700','24/7',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Amethyst, INC.','Recovery services for women and their children','455 E Mound St','6142421284','M-F 8:30a-4:30p',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Compdrug, INC.','Substance abuse counseling and treatment. Call for appointment','547 E 11th Ave','6142444506','M-Th 8a-6p, F 8a-1p',1);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('House of Hope','Drug and alchohol trement for men','825 Dennison Ave','6142914691','',1);
 
 COMMIT TRANSACTION;

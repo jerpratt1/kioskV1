@@ -3,10 +3,9 @@ package com.kiosk_v1.kiosk_v1.controller;
 import com.kiosk_v1.kiosk_v1.dao.ServiceDao;
 import com.kiosk_v1.kiosk_v1.model.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -14,10 +13,16 @@ public class ServiceController {
     @Autowired
     private ServiceDao serviceDao;
 
-    @RequestMapping(path = "/test", method = RequestMethod.GET)
-    public Service getTestService(){
-        Service newService = serviceDao.getTestService();
-        return newService;
+    @RequestMapping(path = "/services", method = RequestMethod.GET)
+    public List <Service> getAllService(){
+        List<Service> services = serviceDao.getAllService();
+        return services;
+    }
+
+    @RequestMapping (path = "/services/{category_id}", method = RequestMethod.GET)
+    public List <Service> getServiceById(@PathVariable int category_id){
+        List<Service> services = serviceDao.getServiceById(category_id);
+        return services;
     }
 
 

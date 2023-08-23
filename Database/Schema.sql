@@ -24,7 +24,7 @@ CREATE TABLE services (
 	service_name varchar(150) NOT NULL UNIQUE,
 	service_description varchar(1000),
 	service_address varchar(150),
-	service_phone int,
+	service_phone varchar(15),
 	service_hours varchar(150),
 	category_id int,
 	CONSTRAINT PK_services PRIMARY KEY (service_id),

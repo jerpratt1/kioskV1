@@ -5,7 +5,6 @@ export default {
     
     getAllCategories(){
         return axios.get('/categories')
-    }
-
+    },
 
 }
