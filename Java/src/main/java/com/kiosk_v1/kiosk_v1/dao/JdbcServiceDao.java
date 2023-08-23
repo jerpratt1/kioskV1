@@ -47,6 +47,16 @@ public class JdbcServiceDao implements ServiceDao{
         return services;
     }
 
+    @Override
+    public Service addService(Service service) {
+        String sql = "INSERT INTO services (service_name, service_description, service_address, service_phone, service_hours, category_id) " +
+                "VALUES (?,?,?,?,?,?) RETURNING service_id;";
+        Integer newServiceId = jdbcTemplate.queryForObject(sql, Integer.class, service.getServiceName(), service.getServiceDescription(),
+                service.getServiceAddress(), service.getServicePhone(), service.getServiceHours(), service.getCategoryId());
+
+        return service;
+    }
+
     private Service mapRowToService(SqlRowSet results) {
         Service service = new Service();
 

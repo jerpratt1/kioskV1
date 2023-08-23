@@ -25,6 +25,11 @@ public class ServiceController {
         return services;
     }
 
+    @RequestMapping (path = "/services", method = RequestMethod.POST)
+    public Service addService(@RequestBody Service service){
+        return serviceDao.addService(service);
+    }
+
 
 
 

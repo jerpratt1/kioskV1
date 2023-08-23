@@ -10,4 +10,7 @@ public interface ServiceDao {
     List <Service> getAllService();
 
     List <Service> getServiceById(int id);
+
+    Service addService(Service service);
+
 }
