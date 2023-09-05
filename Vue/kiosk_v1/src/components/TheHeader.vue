@@ -3,6 +3,7 @@
     <nav>
         <router-link to="/">Home</router-link> | 
         <router-link to="/contact">Contact</router-link> | 
+        <router-link to="/add">Add Service</router-link> | 
         <label for="Resources"> Resources </label>
         <select name="Resources" id="Resources">
             <option value="Mental Health and Substance Abuse">Mental Health and Substance Abuse</option>

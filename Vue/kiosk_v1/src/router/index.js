@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
+import AddService from '../views/AddService.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,12 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+
+  {
+    path: '/add',
+    name: 'add',
+    component: AddService
   }
 
 

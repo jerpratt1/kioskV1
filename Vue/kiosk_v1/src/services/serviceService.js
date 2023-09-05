@@ -11,4 +11,8 @@ export default {
         return axios.post("/#", category)
     },
 
+    addService(service){
+        return axios.post("/services", service)
+    },
+
 }
