@@ -22,7 +22,7 @@ public class JdbcCategoryDao implements CategoryDao {
     public List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<>();
 
-        String sql = "SELECT category_id, category_name, updated FROM categories;";
+        String sql = "SELECT category_id, category_name, updated, url FROM categories;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
 
         while(results.next()) {
@@ -38,6 +38,7 @@ public class JdbcCategoryDao implements CategoryDao {
         category.setCategoryId(results.getInt("category_id"));
         category.setCategoryName(results.getString("category_name"));
         category.setUpdated(results.getDate("updated"));
+        category.setUrl(results.getString("url"));
 
         return category;
     }

@@ -7,6 +7,7 @@ public class Category {
     private int categoryId;
     private String categoryName;
     private Date updated;
+    private String url;
 
     public Category() {
     }
@@ -15,6 +16,14 @@ public class Category {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.updated = updated;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public int getCategoryId() {

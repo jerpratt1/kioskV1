@@ -8,7 +8,7 @@ export default {
     },
 
     getServicesByCategory(category){
-        return axios.post("/#", category)
+        return axios.get("/services/" + category)
     },
 
     addService(service){

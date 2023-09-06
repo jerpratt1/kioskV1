@@ -16,6 +16,7 @@ CREATE TABLE categories (
 	category_id SERIAL,
 	category_name varchar(150) NOT NULL UNIQUE,
 	updated DATE,
+	url varchar(150),
 	CONSTRAINT PK_categories PRIMARY KEY (category_id)
 );
 

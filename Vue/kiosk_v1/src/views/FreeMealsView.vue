@@ -1,42 +1,41 @@
 <template>
-<div >
+  <div>
+    Free Meals
     <div id="cards">
-        <div id="card" v-for="card in categories" v-bind:key="card.id">
-            <div>{{card.categoryName}}</div>
-            <div>Updated: {{card.updated}}</div>
-            <a v-bind:href="card.url">Go</a>
+        <div id="card" v-for="card in services" v-bind:key="card.id">
+            <div>{{card.serviceName}}</div>
+            <div>{{card.serviceDescription}}</div>
         </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-import categoryService from '../services/categoryService.js';
+import serviceService from '../services/serviceService.js';
 export default {
   data(){
     return {
-      categories: [],
+      services: [],
     }
   },
   
 
   methods: {
-    populateCategories() {
-      categoryService.getAllCategories().then((response) =>{
-        this.categories = response.data;
+    populateServices() {
+      serviceService.getServicesByCategory(10).then((response) =>{
+        this.services = response.data;
       })
     }
   },
 
   created: 
     function(){
-        this.populateCategories();
+        this.populateServices();
   }
 }
 </script>
 
 <style scoped>
-
 #cards{
     display: flex;
     justify-content: center;
