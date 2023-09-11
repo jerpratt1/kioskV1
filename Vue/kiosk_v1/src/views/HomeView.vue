@@ -1,6 +1,5 @@
 <template>
   <div>
-    This is the home view
     <all-categories />
   </div>
 </template>

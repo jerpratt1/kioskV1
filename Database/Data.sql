@@ -44,7 +44,7 @@ INSERT INTO services(service_name, service_description, service_address, service
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('PrimayOne Health','Medical, Dental, Vision, OB-gyn, and transportation services','','6146450521','Call For details and locations.',2);
 
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('J.O.I.N.','Birth certificate vouchers, utilities, clothing','578 E Main St','6142412530','M-F 10a-11:30p and 1p-2p',3);
-INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Stone Village','Sytaye ID, birth certificate vouchers','139 E 2nd Ave','6145795493','Tues 8:30a-9:30a',3);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Stone Village','State ID, birth certificate vouchers','139 E 2nd Ave','6145795493','Tues 8:30a-9:30a',3);
 
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Ohio Means Jobs','','1111 East Broad St','6145595052','M-F 8a-5p',4);
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('SouthEast Vocational','','3770 N High St.','6142947117','M-F 8a-5p',4);
@@ -52,6 +52,14 @@ INSERT INTO services(service_name, service_description, service_address, service
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Jewish Family Services','','1070 College Ave','6142311890','',4);
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Columbus Works, Inc','','775 W. Broad St','6145858346','9a-5p',4);
 
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Franklin County Veteran Service Commision','Helps veterans obtain benefits','280 E Broad St','6145252500','M, W, Th, F 7:30a-4p, 12:30-4p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Health Care for Homeless Veterans','Medical Care. References for shelter and housing','420 N. James Rd','6142575499','M-F 9-11a, 1-3p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Crisis Line','National Veterans Suicide Prevention Line. Crisis assistance.','','800-273-8255','24/7',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Military Veterans Resource Center','Career services for Veterans','1395 E Dublin Granville Rd','6142300662','M-F 8a-4p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Veteran Outreach Center','Mental health, sexual trauma, bereavement','855 Bethel Rd','6142575550','M-F 8a-4:30p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Volunteers of America Veteran Resource Center','Residential Alcohol and Drug Treatment. Employment services. Emergency and transitional Housing. Ext 1603','624 Harmon Ave','6148490145','M-F 8a-5p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Faith Mission Supportive Services for Vets Families','Rapid Rehousing','','6142246617','M-F 8a-5p',5);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Veterans and Families First','Homeless Prevention and Rapid Rehousing','624 Harmon Ave','6146299960','M-F 8a-5p',5);
 
 
 
