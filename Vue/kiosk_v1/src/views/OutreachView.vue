@@ -5,6 +5,9 @@
         <div id="card" v-for="card in services" v-bind:key="card.id">
             <div>{{card.serviceName}}</div>
             <div>{{card.serviceDescription}}</div>
+            <div>{{card.serviceAddress}}</div>
+            <div>{{card.servicePhone}}</div>
+            <div>{{card.serviceHours}}</div>
         </div>
     </div>
   </div>

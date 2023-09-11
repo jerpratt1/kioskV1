@@ -25,6 +25,40 @@ INSERT INTO services(service_name, service_description, service_address, service
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Compdrug, INC.','Substance abuse counseling and treatment. Call for appointment','547 E 11th Ave','6142444506','M-Th 8a-6p, F 8a-1p',1);
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('House of Hope','Drug and alchohol treatment for men','825 Dennison Ave','6142914691','',1);
 
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Equitas Healthcare','HIV Services','750 East Long St','6143406777','M-F 9a-4p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Equitas Healthcare','HIV Services','1033 N. High St','6143406777','M-F 9a-4p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Physicians Care Connection','Medical and dental services. Located in back of building','240 Parsons Ave','6148842441','M 4:30p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Columbus Free Clinic','Sign-up online at: ColumbusFreeClinic.com','2231 N. High St','6144048417','',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Helping Hands Free Clinic','Walk-ins only','5100 Karl Rd','','Thursdays 2-4:30p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Health Center at Faith Mission','Ext. 2106','245 N. Grante Ave','6142246617','M-F 8:30a-5p & Th 6p-8p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Lower Lights Christian Health','Additional locations available','1160 W. Broad St','6142741455','',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Mount Carmel Mobile Coach and Street Medicine','Call for locations','','6142741455','',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('New Life Community Outreach','','25 W. 5th Ave','6142940134','Sun 7a-8:30a',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Southeast Healthcare','Medical, Dental, and other services.','16 W. Long St','6142250990','M-F 8a-5p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Southeast Healthcare','Medical, Dental, and other services.','524 #. Broad St','6142250990','M-F 8a-5p',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Stowe Mission of Central Ohio','Dental and Vision care by appointment.','888 Parsons Ave','614-445-8400','Every Monday and 3rd Thursday',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Vineyard Free Health Clinic','Visit: VineyeardCommunityCenter.org','171 E 5th Ave','6142595428','',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Vineyard Free Health Clinic','Visit: VineyeardCommunityCenter.org','6000 Cooper Rd','6142595428','',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Family Planning and Sexual Health','','240 Parsons Ave','6146541850','Hours Vary, call for details.',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Dwell Free Clinic','Ext. 1840','1934 N. Fourth St','6148236510','1st and 3rd Monday each month.',2);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('PrimayOne Health','Medical, Dental, Vision, OB-gyn, and transportation services','','6146450521','Call For details and locations.',2);
+
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('J.O.I.N.','Birth certificate vouchers, utilities, clothing','578 E Main St','6142412530','M-F 10a-11:30p and 1p-2p',3);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Stone Village','Sytaye ID, birth certificate vouchers','139 E 2nd Ave','6145795493','Tues 8:30a-9:30a',3);
+
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Ohio Means Jobs','','1111 East Broad St','6145595052','M-F 8a-5p',4);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('SouthEast Vocational','','3770 N High St.','6142947117','M-F 8a-5p',4);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Goodwill','','1331 Edgehill Road','6145830365','M-Th 8a-4p, F 8a-12p',4);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Jewish Family Services','','1070 College Ave','6142311890','',4);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Columbus Works, Inc','','775 W. Broad St','6145858346','9a-5p',4);
+
+
+
+
+
+
 COMMIT TRANSACTION;
+
+
 
 

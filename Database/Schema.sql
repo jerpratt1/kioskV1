@@ -22,7 +22,7 @@ CREATE TABLE categories (
 
 CREATE TABLE services (
 	service_id SERIAL,
-	service_name varchar(150) NOT NULL UNIQUE,
+	service_name varchar(150) NOT NULL,
 	service_description varchar(1000),
 	service_address varchar(150),
 	service_phone varchar(15),
