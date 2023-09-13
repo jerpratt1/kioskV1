@@ -1,33 +1,45 @@
 <template>
   <div>
     <nav>
-        <router-link to="/">Home</router-link> | 
-        <router-link to="/contact">Contact</router-link> | 
-        <router-link to="/add">Add Service</router-link> | 
-        <label for="Resources"> Resources </label>
-        <select name="Resources" id="Resources">
-            <option value="Mental Health and Substance Abuse">Mental Health and Substance Abuse</option>
-            <option value="Healthcare">Healthcare</option>
-            <option value="Identification">Identification</option>
-            <option value="Employment Assistance">Employment Assistance</option>
-            <option value="Veteran Assistance">Veteran Assistance</option>
-            <option value="Outreach and Drop-In">Outreach and Drop-In</option>
-            <option value="Youth Assistance">Youth Assistance</option>
-            <option value="Legal Assistance">Legal Assistance</option>
-            <option value="Eviction Assistance">Eviction Assistance</option>
-            <option value="Free Meals">Free Meals</option>
-            <option value="Clothing and Household">Clothing and Household</option>
-            <option value="Additional Resources">Additional Resources</option>  
+        <router-link to="/">Home</router-link> 
+        <router-link to="/contact">Contact</router-link> 
+        <router-link to="/add">Add Service</router-link> 
+        <div>
+        <select name="Resources" id="Resources" v-model="selectedPage">
+            <option value="mental_substance">Mental Health and Substance Abuse</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="identification">Identification</option>
+            <option value="employment">Employment Assistance</option>
+            <option value="veteran">Veteran Assistance</option>
+            <option value="outreach">Outreach and Drop-In</option>
+            <option value="youth">Youth Assistance</option>
+            <option value="legal">Legal Assistance</option>
+            <option value="eviction">Eviction Assistance</option>
+            <option value="meals">Free Meals</option>
+            <option value="clothing_household">Clothing and Household</option>
+            <option value="additional_resources">Additional Resources</option>  
         </select>
-        <button>Go</button>
-        
+        <button v-on:click.prevent="goToSelected(selectedPage)">Go</button>
+        </div>
     </nav>
   </div>
 </template>
 
 <script>
+import router from '@/router'
 export default {
+ data() {
+    return {
+      selectedPage: "",
+    }
+  },
 
+  methods: {
+    goToSelected(){
+        router.push('/' + this.selectedPage);
+    }
+    
+  }
 }
 </script>
 
@@ -35,7 +47,7 @@ export default {
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-content: center;
 
 }

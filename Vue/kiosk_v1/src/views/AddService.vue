@@ -2,8 +2,8 @@
   <div>
     <form v-on:submit.prevent="handleSubmit">
       <div id="container">
-      <label for="service-name">Service Name </label>
-      <input name="service-name" type="text" v-model="service.serviceName">
+      <label for="service-name">*Service Name </label>
+      <input name="service-name" type="text" v-model="service.serviceName" required>
       <label for="service-description">Description </label>
       <input name="service-description" type="text" v-model="service.serviceDescription">
       <label for="service-address"> Address </label>
@@ -12,8 +12,8 @@
       <input name="service-phone" type="phone" v-model="service.servicePhone">
       <label for="service-hours">Hours </label>
       <input name="service-hours" type="text" v-model="service.serviceHours">
-      <label for="resources">Category </label>
-      <select name="resources" id="Resources" v-model="service.categoryId">
+      <label for="resources">*Category</label>
+      <select name="resources" id="Resources" v-model="service.categoryId" required>
             <option value="1">Mental Health and Substance Abuse</option>
             <option value="2">Healthcare</option>
             <option value="3">Identification</option>

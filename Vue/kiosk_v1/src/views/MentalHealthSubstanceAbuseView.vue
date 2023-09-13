@@ -1,6 +1,6 @@
 <template>
   <div>
-    MentalHealthSubstanceAbuse
+    <h1>MentalHealthSubstanceAbuse</h1>
     <div id="cards">
         <div id="card" v-for="card in services" v-bind:key="card.id">
             <h2>{{card.serviceName}}</h2>

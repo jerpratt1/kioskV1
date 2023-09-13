@@ -1,6 +1,6 @@
 <template>
   <div>
-    Eviction Assistance
+    <h1>Eviction Assistance</h1>
     <div id="cards">
         <div id="card" v-for="card in services" v-bind:key="card.id">
             <div>{{card.serviceName}}</div>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <the-header />
+    <the-header id="header"/>
     <router-view />
   </div>
 </template>
@@ -24,5 +24,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#header{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+
+html{
+  background: lightgray;
+  background-size: cover;
+  background-attachment: fixed;
 }
 </style>
