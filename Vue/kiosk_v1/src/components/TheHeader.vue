@@ -2,8 +2,9 @@
   <div>
     <nav>
         <router-link to="/">Home</router-link> 
-        <router-link to="/contact">Contact</router-link> 
-        <router-link to="/add">Add Service</router-link> 
+        <router-link to="contact">Contact</router-link> 
+        <router-link to="assistance">Assistance</router-link> 
+        <router-link to="add">Add Service</router-link> 
         <div>
         <select name="Resources" id="Resources" v-model="selectedPage">
             <option value="mental_substance">Mental Health and Substance Abuse</option>

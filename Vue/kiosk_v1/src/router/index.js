@@ -15,6 +15,8 @@ import EvictionView from '../views/EvictionView.vue'
 import FreeMealsView from '../views/FreeMealsView.vue'
 import ClothingHouseholdView from '../views/ClothingHouseholdView.vue'
 import AdditionalResourcesView from '../views/AdditionalResourcesView.vue'
+import AssistanceView from '../views/AssistanceView.vue'
+import EditService from '../views/EditService.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +39,19 @@ const routes = [
     name: 'add',
     component: AddService
   },
+
+  {
+    path: '/editService',
+    name: 'editService',
+    component: EditService
+  },
+
+  {
+    path: '/assistance',
+    name: 'assistance',
+    component: AssistanceView
+  },
+
   {
     path: '/mental_substance',
     name: 'MentalHealthSubstanceAbuse',

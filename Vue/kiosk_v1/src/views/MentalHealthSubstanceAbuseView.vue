@@ -1,22 +1,25 @@
 <template>
   <div>
-    <h1>MentalHealthSubstanceAbuse</h1>
+    <h1>Mental Health & Substance Abuse</h1>
     <div id="cards">
-        <div id="card" v-for="card in services" v-bind:key="card.id">
-            <h2>{{card.serviceName}}</h2>
-            <div id="details">
-              <div id="description">{{card.serviceDescription}}</div>
-              <div id="address">{{card.serviceAddress}}</div>
-              <div id="phone">{{card.servicePhone}}</div>
-              <div id="hours">{{card.serviceHours}}</div>
-            </div>
+        <div id="card" v-for="card in services" v-bind:key="card.id" >
+          <div id="details">
+            <h2 id="title">{{card.serviceName}}</h2>
+            <button id="button" v-on:click.prevent="goToEdit(card)">Edit</button>
+            <div id="description">{{card.serviceDescription}}</div>
+            <div id="address">{{card.serviceAddress}}</div>
+            <div id="phone">{{card.servicePhone}}</div>
+            <div id="hours">{{card.serviceHours}}</div>
+          </div>
         </div>
     </div>
   </div>
 </template>
 
 <script>
+import router from '@/router/index.js';
 import serviceService from '../services/serviceService.js';
+
 export default {
   data(){
     return {
@@ -30,7 +33,14 @@ export default {
       serviceService.getServicesByCategory(1).then((response) =>{
         this.services = response.data;
       })
-    }
+    },
+
+    goToEdit(card){
+      this.$store.commit('SET_SERVICE_TO_EDIT', card)
+      router.push('/editService')
+    },
+
+    
   },
 
   created: 
@@ -57,6 +67,21 @@ export default {
     width: 25%;
 }
 
+#editForm{
+  display: flex;
+  flex-direction: column;
+}
+
+#title{
+  grid-area: "title";
+  margin: 2%;
+}
+
+#button{
+  grid-area: "button";
+  margin: 2%;
+}
+
 #description{
   grid-area: "description";
   margin: 2%;
@@ -80,6 +105,7 @@ export default {
 #details{
   display: grid;
   grid-template-areas: 
+  "title button"
   "description phone"
   "address hours";
 }
