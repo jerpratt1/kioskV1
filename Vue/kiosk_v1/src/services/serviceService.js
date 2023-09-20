@@ -15,4 +15,8 @@ export default {
         return axios.post("/services", service)
     },
 
+    updateService(service){
+        return axios.put("/services", service)
+    }
+
 }

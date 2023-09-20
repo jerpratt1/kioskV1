@@ -13,4 +13,6 @@ public interface ServiceDao {
 
     Service addService(Service service);
 
+    int editService(Service service);
+
 }

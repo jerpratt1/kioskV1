@@ -57,6 +57,16 @@ public class JdbcServiceDao implements ServiceDao{
         return service;
     }
 
+    @Override
+    public int editService(Service service) {
+        String sql = "UPDATE services " +
+                "SET service_name = ?, service_description = ?, service_address = ?, service_phone = ?, service_hours = ? " +
+                "WHERE service_id = ?;";
+        int numberOfRowsUpdated = jdbcTemplate.update(sql, service.getServiceName(), service.getServiceDescription(),
+                service.getServiceAddress(), service.getServicePhone(), service.getServiceHours(), service.getServiceId());
+        return numberOfRowsUpdated;
+    }
+
     private Service mapRowToService(SqlRowSet results) {
         Service service = new Service();
 

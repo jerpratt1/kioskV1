@@ -30,6 +30,12 @@ public class ServiceController {
         return serviceDao.addService(service);
     }
 
+    @RequestMapping (path = "/services", method = RequestMethod.PUT)
+    public int editService(@RequestBody Service service){
+        int numberOfRowsUpdated = serviceDao.editService(service);
+        return numberOfRowsUpdated;
+    }
+
 
 
 

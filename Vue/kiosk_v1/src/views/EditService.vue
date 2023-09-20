@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import serviceService from '@/services/serviceService'
+import router from '@/router/index.js';
 export default {
     data(){
         return {
@@ -32,8 +34,13 @@ export default {
         },
 
         handleSubmit(){
-            console.log("clicked")
-
+            serviceService.updateService(this.card).then((response) =>{
+                console.log(response)
+                
+            })
+            this.$store.commit("RESET_SERVICE_TO_EDIT")
+            router.push("/")
+            
         },
     },
 
