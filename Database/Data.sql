@@ -61,7 +61,17 @@ INSERT INTO services(service_name, service_description, service_address, service
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Faith Mission Supportive Services for Vets Families','Rapid Rehousing','','6142246617','M-F 8a-5p',5);
 INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Veterans and Families First','Homeless Prevention and Rapid Rehousing','624 Harmon Ave','6146299960','M-F 8a-5p',5);
 
-
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Maryhaven','Homelessness outreach and recovery services','1775 Alum Creek Dr','6144491530','',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Mount Carmel Outreach','Please call for locations and details','','6142344777','M-F',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Capital Crossroads & Discovery','','23 N 4th St','6142285718','M-Sat 5:30a - 11:30p, Sun 9:30a-6p',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Path - Aprogram of Southeast','Linkage to mental health & recovery services for homeless individuals. ext. 1301','','6149283000','',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('1 Divine Line 2 Health','Outreach, drop-in center, victims human trafficking and addition','','6149283000','',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Coalition for the Homeless','','501 E. Broad St','','',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Jordans Crossing','Meals, clothing, warming.','342 N Hague Ave','','M-F 9a-4p, Meal 11a-2p',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Open Shelter','Clothing Supplies, support services.','1037 Parsons Ave','6142222885','M-F 10a-2p',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('St. Sophia Orthodox Cathedral','','1493 Indianola Ave','6147029096','T-Sat, 7:30a-3p',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('UMC Church 4 All People','ID, clothing, hygeine, food, worship, support services, warming center.','946 Parsons Ave','6144457342','',6);
+INSERT INTO services(service_name, service_description, service_address, service_phone, service_hours, category_id) VALUES ('Hope Resource Center','Clothing and supplies.','2596 Sullivant Ave','','',6);
 
 
 
